@@ -1,5 +1,5 @@
 [versions]
-agp = "8.10.1"
+agp = "8.6.1"
 androidPluginAnnotationV9 = "1.0.0"
 androidSdk = "11.8.0"
 androidSdkVersion = "11.8.0"
@@ -36,6 +36,10 @@ playServicesLocation = "21.3.0"
 playServicesLocationVersion = "21.3.0"
 playServicesMaps = "19.2.0"
 retrofit = "3.0.0"
+appcompat = "1.7.1"
+materialVersion = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
 
 [libraries]
 android-plugin-annotation-v9 = { module = "org.maplibre.gl:android-plugin-annotation-v9", version.ref = "androidPluginAnnotationV9" }
@@ -81,6 +85,10 @@ play-services-location = { module = "com.google.android.gms:play-services-locati
 play-services-location-v2101 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocationVersion" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -4,18 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
-import com.example.riders.ui.screen.HomePage
-import com.example.riders.ui.screen.SignUpPage
+import com.example.riders.ui.screen.home.HomePage
 
 import com.example.riders.ui.theme.RidersTheme
 import kotlinx.coroutines.delay
@@ -38,7 +35,7 @@ class MainActivity : ComponentActivity() {
             RidersTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     HomePage(
-                        modifier = Modifier.padding(innerPadding), innerPadding = innerPadding
+                        modifier = Modifier.padding(innerPadding),
                     )
                 }
             }
